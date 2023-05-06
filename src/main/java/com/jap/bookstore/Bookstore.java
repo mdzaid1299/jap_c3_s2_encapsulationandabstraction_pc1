@@ -12,16 +12,18 @@ public class Bookstore {
         this.books = books;
         this.bookStoreName = bookStoreName;
         this.bookStoreRegistrationId = bookStoreRegistrationId;
-
     }
 
     // Function to calculate the discount for a genre of books
     public float calculateDiscount(Book book, float discountPercentage) {
         float dis = book.price - (book.price * discountPercentage )/100;
-        if (Objects.equals(book.genre, "FICTION")) {
-            return dis;
-        } else {
-            return book.price;
+        // if (Objects.equals(book.genre, "FICTION")) {
+        //     return dis;
+        // } else {
+        //     return book.price;
+        // }
+        if(book.genre.equals("FICTION")){
+
         }
 
     }
